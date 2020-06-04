@@ -1,7 +1,7 @@
 
 <div class="card-columns">
-    <div *ngFor="let heroe of listaHeroes" >
-        <app-card [heroe]="heroe" ></app-card>
+    <div *ngFor="let heroe of listaHeroes" class="animated fadeIn">
+        <app-card [heroe]="heroe" (salida)="escucharHijo($event)"  ></app-card>
     </div>
     
   </div>

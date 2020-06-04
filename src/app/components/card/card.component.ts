@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Heroe } from 'src/app/classes/heroe.interface';
 
 @Component({
@@ -8,9 +8,14 @@ import { Heroe } from 'src/app/classes/heroe.interface';
 })
 export class CardComponent implements OnInit {
   @Input() heroe: Heroe;
+  @Output() salida = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  llamarHeroe(heroe: Heroe) {
+    this.salida.emit(heroe.nombre);
   }
 
 }

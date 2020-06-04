@@ -17,4 +17,8 @@ export class HeroesComponent implements OnInit {
     this.listaHeroes = this.heroesService.getAllHeroes();
   }
 
+  escucharHijo(nombre: string) {
+    alert(`el heroe seleccionado es ${nombre}`);
+  }
+
 }
