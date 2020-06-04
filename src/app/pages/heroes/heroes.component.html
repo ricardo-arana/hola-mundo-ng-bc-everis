@@ -1,6 +1,7 @@
 
-<ul>
-    <li>Acuaman</li>
-    <li>Batman</li>
-    <li>Superman</li>
-</ul>
+<div class="card-columns">
+    <div *ngFor="let heroe of listaHeroes" >
+        <app-card [heroe]="heroe" ></app-card>
+    </div>
+    
+  </div>
