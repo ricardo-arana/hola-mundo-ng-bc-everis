@@ -1,5 +1,6 @@
+import { Heroe } from '../classes/heroe.interface';
 
-export const heroes = [
+export const heroes: Heroe[] = [
     {
       nombre: "Aquaman",
       bio: "El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.",
