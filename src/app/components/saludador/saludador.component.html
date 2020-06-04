@@ -3,4 +3,10 @@
 <h3>Por favor, ingrese su nombre:</h3>
 <input type="text" placeholder="ingrese su nombre" #nombre>
 <button (click)="saludar(nombre.value)" class="btn btn-primary">Saludar</button>
-<h4 *ngIf="!mostrar" class="nombre">Hola {{saludado}} bienvenido al mundo de angular</h4>
+<h4 *ngIf="saludado" class="nombre">Hola {{saludado}} bienvenido al mundo de angular</h4>
+<h2>Historial de saludos</h2>
+<ul>
+    <li *ngFor="let nombre of historial">
+        {{nombre}}  
+    </li>
+</ul>

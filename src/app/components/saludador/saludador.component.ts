@@ -8,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class SaludadorComponent implements OnInit {
   saludado: string;
   mostrar = false;
+  historial: string[] = [];
   constructor() { }
 
   ngOnInit(): void {
   }
 
   saludar(nombre: string) {
-    // if(nombre) {
+     if(nombre) {
       this.saludado = nombre;
-    // }
+      this.historial.push(nombre);
+     }
   }
 
 }
