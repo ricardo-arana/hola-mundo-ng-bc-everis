@@ -12,7 +12,6 @@ export class AppComponent {
   apellido: string;
   fechaNacimiento: Date;
   fechaTexto: string;
-  saludado: string;
 
   constructor() {
     this.apellido = 'Arana Reyes Guerrero';
@@ -21,10 +20,4 @@ export class AppComponent {
 
   }
 
-  saludar(nombre: any) {
-    console.log(nombre)
-    if(nombre) {
-      this.saludado = nombre;
-    }
-  }
 }

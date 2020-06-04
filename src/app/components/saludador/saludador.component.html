@@ -1,1 +1,6 @@
-<p>saludador works!</p>
+<h1>Saludador</h1>
+<h2>Bievenido al saludador</h2>
+<h3>Por favor, ingrese su nombre:</h3>
+<input type="text" placeholder="ingrese su nombre" #nombre>
+<button (click)="saludar(nombre.value)" class="btn btn-primary">Saludar</button>
+<h4 *ngIf="!mostrar" class="nombre">Hola {{saludado}} bienvenido al mundo de angular</h4>

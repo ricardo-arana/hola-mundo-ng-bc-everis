@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saludador.component.scss']
 })
 export class SaludadorComponent implements OnInit {
-
+  saludado: string;
+  mostrar = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  saludar(nombre: string) {
+    // if(nombre) {
+      this.saludado = nombre;
+    // }
   }
 
 }
