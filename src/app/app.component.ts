@@ -21,7 +21,8 @@ export class AppComponent {
 
   }
 
-  saludar(nombre: string) {
+  saludar(nombre: any) {
+    console.log(nombre)
     if(nombre) {
       this.saludado = nombre;
     }
