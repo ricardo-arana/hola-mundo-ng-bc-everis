@@ -12,6 +12,10 @@ export class HeroesService {
     return heroes;
   }
 
+  getBusquedaHeroes(termino: string): Heroe[] {
+    return heroes.filter(heroe => heroe.nombre.toUpperCase().includes(termino.toUpperCase()) );
+  }
+
   getHeroe(nombreHeroe: string): Heroe {
     return heroes.filter(heroe => heroe.nombre === nombreHeroe)[0];
   }
