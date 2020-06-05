@@ -9,6 +9,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { HeroesComponent } from './pages/heroes/heroes.component';
 import { CardComponent } from './components/card/card.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
+import { BusquedaComponent } from './pages/busqueda/busqueda.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
     InicioComponent,
     HeroesComponent,
     CardComponent,
-    HeroeComponent
+    HeroeComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,
